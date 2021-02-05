@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Home } from '@styled-icons/boxicons-solid/Home'
 import { Article } from '@styled-icons/remix-line/Article'
+import { shade } from 'polished'
 
 
 export const Container = styled.div`
@@ -10,6 +11,7 @@ background-color:#1675AA;
 height:100%;
 width:100%;
 .Link{
+  display:flex;
     margin-bottom:390px;
     color:white;
     font-size:19px;
@@ -19,6 +21,7 @@ width:100%;
   }
   
   .Link1{
+    display:flex;
     color:white;
     font-size:19px;
     outline:none;
@@ -51,8 +54,15 @@ export const Button = styled.button`
   text-decoration:none;
   border:0;
   margin:30px;
-  width:80px;
+  width:100%;
   height:80px;
+  padding:10px;
+  a{
+    
+    :active{
+      background-color:${shade(0.2, '#1675AA')};
+    }
+  }
 
 `;
 
@@ -64,12 +74,10 @@ export const Index = styled.div`
   background-color:white;
   width:1200px;
   height:800px;
+  padding:10px;
 `
-export const Span = styled.span` 
+export const H1 = styled.h1` 
   padding:30px;
-  font-size:20px;
-  font-weight: 900;
-  
 `
 export const Paragrafo = styled.p`
   margin-bottom:-5px;
@@ -79,16 +87,54 @@ export const Paragrafo = styled.p`
 `
 export const Input = styled.input`
   margin-left:30px;
-  padding:10px;
+
   width:1000px;
   height:40px;
   outline:none;
+  border:0;
 `
 export const Index2 = styled.div`
-
   padding:20px;
   justify-content:center;
   background-color:#EEEEEE;
 
+  hr{
+   border:3px solid;
+  }
+`
+
+export const ContainerInput = styled.div`
+  display:flex;
+  align-items:center;
+  background-color:white;
+  
+.iconify{
+    display:flex;
+    margin-right:10px;
+    font-size:30px;
+
+  }
+`
+export const Index3 = styled.div`
+  display:flex;
+  justify-content:space-between;
+  flex-direction:colunm;
+  margin:30px;
+  padding:20px;
+  width:1080px;
+  background-color:#EEEEEE;
+  img{
+    display:flex;
+  }
+  strong{
+    display:flex;
+    padding:15px;
+    font-size:20px;
+    flex-direction:colunm;
+    color:red;
+  }
+  p{
+    padding:10px;
+  }
 
 `

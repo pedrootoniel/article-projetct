@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, } from './styles'
 import Header from '../../Components/Header'
-import Menu from '../../Components/Menu'
+import Login from '../../Pages/Login'
 
 // import { Container } from './styles';
 
@@ -10,7 +10,7 @@ function Home() {
 
     <Container>
       <Header />
-      <Menu />
+      <Login />
     </Container>
   )
 }
