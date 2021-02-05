@@ -15,6 +15,8 @@ export default createGlobalStyle`
         height:100%;
         -webkit-font-smoothing: antialiased !important;
         font-family: 'Maven Pro', sans-serif;
+        background: #eee;
+         text-rendering: optimizeLegibility !important;
     }
     :root {
       --color-button1: #2D3047;
